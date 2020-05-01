@@ -1,0 +1,20 @@
+version: "3.2"
+services:
+  nodejs:
+    container_name: js-express-ws-node
+    build: .
+    ports:
+      - 23423:23423
+    volumes:
+    - .:/var/www/js-express-ws-node
+
+  mongodb:
+    container_name: js-express-ws-mongo
+    image: mongo
+    ports:
+      - 27017:27017
+    volumes:
+    - ./mongodb:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
