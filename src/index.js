@@ -19,7 +19,7 @@ const PUBLIC_PATH = 'public';
 // // });
 //
 const expressApp = new Express();
-const { BROKER_PORT = 23423 } = require('optimist').argv;
+const BROKER_PORT = 23423;
 
 const wsList = {};
 
