@@ -35,7 +35,7 @@ expressApp.use(function(req, res, next) {
     next();
 });
 
-expressApp.use(express.static(PUBLIC_PATH));
+expressApp.use(Express.static(PUBLIC_PATH));
 expressApp.use(sessionParser);
 expressApp.use(bodyParser.json());
 expressApp.use('/broker', brokerRouter);
