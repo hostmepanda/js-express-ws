@@ -12,6 +12,6 @@ const parseMessage = ({ action = null, data = null } = {}) => {
 	return actionHandlers[action](data);
 };
 
-module.export = {
+module.exports = {
 	parseMessage,
 };
