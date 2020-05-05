@@ -1,0 +1,8 @@
+{
+  "runningPort": 23423,
+  "sessionParserOptions": {
+    "saveUninitialized": false,
+    "secret": "securityCheck22#",
+    "resave": false
+  }
+}
